@@ -1,18 +1,22 @@
 // Define the `homepageApp` module
 var app = angular.module('homepageApp', ["ngRoute"]);
 
-app.config(function($routeProvider) {
+  // configure our routes
+  app.config(function($routeProvider) {
     $routeProvider
-    .when("/", {
-        templateUrl : "homepage.html"
-    })
-    .when("/blog", {
-        templateUrl : "blog.html"
-    })
-    .otherwise({
-        templateUrl : "homepage.html"
-    });
-});
+      // route for the home page
+      .when('/', {
+        templateUrl : 'homepage.html',
+        controller  : 'ContentController'
+      })
+
+      // route for the about page
+      .when('/blog', {
+        templateUrl : 'partials/blog.html',
+        controller  : 'ContentController'
+      })
+      .otherwise({redirectTo: '/'});
+  });
 
 // Define the `contentController` controller on the `homepageApp` module
 app.controller('ContentController', function ContentController($scope) {
@@ -64,7 +68,6 @@ app.controller('ContentController', function ContentController($scope) {
       demo: ""
     }
   ]; 
-
 });
 
 app.filter("trust", ['$sce', function($sce) {

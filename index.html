@@ -9,151 +9,23 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="shortcut icon" href="favicon.ico" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-
-<script src="js/app.js"></script>
 </head>
-<body id="top" data-spy="scroll" data-target=".navbar-collapse" ng-controller="ContentController">
+<body id="top">
 
 <div ng-include="'partials/nav.htm'"></div>
+<div>
+  <div ng-view></div>
+</div>
 
-<section id="home" class="text-center">
-    <div class="header-image">
-        <div class="flexslider">
-            <ul class="slides">
-                <li>
-                    <img src="images/slider/canyon.jpg" alt="Slide 1">
-                    <div class="slider-caption">
-                        <div>
-                            <h1>Computer Science</h1>
-                            <h2>@ University of Pittsburgh</h2>
-                            <a href="#experience" class="smoothScroll -slider-btn btn btn-default">My Experiences</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/slider/stary.jpg" alt="Slide 2">
-                    <div class="slider-caption">
-                        <div>
-                            <h1>Speak</h1>
-                            <h2>Java, Objective-C, Swift, Javascript, C#, Python</h2>
-                            <a href="#projects" class="smoothScroll -slider-btn btn btn-default">My Projects</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
 
-<!-- start projects -->
-<section id="projects">
-    <div class="container">
-        <div class="col-md-2"></div>
-        <div class="col-md-8 text-center">
-            <h2><i class="fa fa-wrench"></i>&nbsp PROJECTS</h2>
-        </div>
-        <!-- projects -->
-        <div ng-repeat="proj in projects" class="col-md-12 project-row">
-            <div class="col-sm-8 col-md-8">
-                <h3><a href={{proj.url}} target="_blank">{{proj.name}}</a></h3>
-                <h4>{{proj.subtitle}}</h4>
-                <div ng-bind-html="proj.desc | trust"></div>
-            </div>
-            <div class="col-sm-4 col-md-4">
-                <div class="project-image-container">
-                    <a href={{proj.url}} target="_blank">
-                        <img class="project-image" src={{proj.image}} class="img-responsive" alt={{proj.name}}>
-                    </a>
-                </div>
-            </div>
-            <div class="project-link col-md-12 ">
-                <p>
-                    <a ng-if="proj.playstore" href={{proj.playstore}}><img src="images/google-play.png" alt="Get it on Google Play" width="90" height="32"></a>
-                    <a ng-if="proj.appstore" href={{proj.appstore}}><img src="images/AppStore.png" alt="AppStore" width="90" height="32"></a>
-                    <a ng-if="proj.github" href={{proj.github}}><img src="images/GitHub.png" alt="Github.png" width="32" height="32"></a>
-                    <a ng-if="proj.demo" href={{proj.demo}}><img src="images/Demo.png" alt="demo" width="32" height="32"></a>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end projects -->
-
-<!-- start experiences -->
-<section id="experience" class="text-center">
-    <div class="container">
-        <div class="col-md-2"></div>
-        <div class="col-md-8 text-center">
-            <h2><i class="fa fa-th-list"></i> &nbsp EXPERIENCES</h2>
-        </div>
-        <!-- experiencess -->
-        <div ng-repeat="exp in experiences" class="row col-md-12">
-            <div class="text">
-                <h3>{{exp.role}}</h3>
-                <h5>{{exp.time}}</h5>
-                <h5><a href={{exp.url}}>{{exp.team}}</a>, {{exp.location}}</h5>
-                <div class="col-md-10">
-                    <div ng-bind-html="exp.desc | trust"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end  experiences -->
-
-<section>
-    <div>
-    <ul>
-         <li ng-repeat="phone in phones">
-         <span>{{phone.name}}</span>
-         <p>{{phone.snippet}}</p>
-       </li>
-     </ul>
-    </div>
-</section>
-
-<!-- start contact -->
-<section id="contact">
-    <div class="container">
-
-    </div>
-</section>
-<!-- end contact -->
-
-<!-- start footer -->
-<footer class="text-center"  id="foot">
-    <div class="container">
-        <h2>CONTACE ME</h2>
-        <br/>
-
-        <div class="row">
-            <div class="social_icon">
-                <a href="https://www.facebook.com/gangzheng.tong" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://github.com/gztong" target="_blank" class="fa fa-github"></a>
-                <a href="https://www.linkedin.com/in/gztong" target="_blank" class="fa fa-linkedin"></a>
-            </div>
-            <p><i class="fa fa-phone"></i>412-932-4188</p>
-            <p><i class="fa fa-envelope-o"></i> <a href="mailto:tonggangzheng@gmail.com">tonggangzheng@gmail.com</a></p>
-            <p><i class="fa fa-globe"></i> <a href="#top">http://www.tonggangzheng.com</a></p>
-        </div>
-        <p>Built by Gangzheng | 2016</p>
-    </div>
-</footer>
-<!-- end footer -->
-
-<!-- start back to top -->
-<a href="#top" class="go-top"><i class="fa fa-chevron-up fa-1x"></i></a>
-<!-- end back to top -->
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+<script src="js/app.js"></script>
 <script src="js/actions.js"></script>
 <script src="js/googleAnalytics.js"></script>
-
 </body>
 </html>
