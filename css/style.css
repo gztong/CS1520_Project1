@@ -1,8 +1,3 @@
-/*
-Composite Template 
-http://www.templatemo.com/preview/templatemo_444_composite
-*/
-
 body
 {
 	background: #FFF;
@@ -11,7 +6,7 @@ body
 	position: relative;
 }
 
-/* start templatemo page container */
+/* start   page container */
 @media (min-width: 768px) {
 	.container { width: 700px; }
 }
@@ -21,7 +16,7 @@ body
 @media (min-width: 1200px) {
 	.container { width: 1000px;	}
 }
-/* end templatemo page container */
+/* end   page container */
 
 .blue {
 	color: #06C;
@@ -31,7 +26,7 @@ body
 	color: #090;
 }
 
-/* start templatemo navigation */
+/* start   navigation */
 .navbar-default
 {
 	background: #FFF;
@@ -82,9 +77,9 @@ body
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus { background-color: transparent }
-/* end templatemo navigation */
+/* end   navigation */
 
-/* start templatemo header background slideshow */
+/* start   header background slideshow */
 #home { padding-top: 65px; }
 .flexslider {
 	margin: 0 0 60px;
@@ -139,7 +134,7 @@ body
 	-ms-flex-align: center;
 	align-items: center;
 }
-.templatemo-slider-btn
+. -slider-btn
 {
 	background: #ffa400;
 	border-radius: 0;
@@ -153,14 +148,14 @@ body
 	width: 250px;
 	padding: 12px 10px 10px 10px;
 }
-.templatemo-slider-btn:hover,
-.templatemo-slider-btn:focus {
+. -slider-btn:hover,
+. -slider-btn:focus {
 	background: #fff;
 	color: #ffa400;
 	border: 2px solid transparent;
 }
 
-/* start templatemo interests */
+/* start   interests */
 .interests
 {
 	background: #F9F9F9;
@@ -200,9 +195,9 @@ body
 	-ms-transform: rotate(360deg);
 	transform: rotate(360deg);
 }
-/* end templatemo interests */
+/* end   interests */
 
-/* start templatemo about */
+/* start   about */
 #about
 {
 	color: #333;
@@ -221,9 +216,9 @@ body
 	padding-bottom: 10px;
 }
 
-/* end templatemo about */
+/* end   about */
 
-/* start templatemo projects */
+/* start   projects */
 #projects
 {
 	border-top: 1px solid #f0f0f0;
@@ -275,10 +270,10 @@ body
 	width: 200px;
 	height: 200px;
 }
-/* end templatemo project */
+/* end   project */
 
 
-/* start templatemo experience */
+/* start   experience */
 #experience
 {
 	text-align: left;
@@ -307,11 +302,10 @@ body
 {
 	margin-left: 20px;
 }
+/* end   experience */
 
-/* end templatemo experience */
 
-
-/* start templatemo portfolio */
+/* start   portfolio */
 #portfolio
 {
 	text-align: center;
@@ -342,7 +336,6 @@ body
 	top: 0;
 	left: 0;
 	bottom: 0;
-	/*padding-top: 46px;*/
 	text-align: center;
 }
 #portfolio .image_thumb:hover .image_overlay { opacity: 0.9; }
@@ -356,7 +349,6 @@ body
 	line-height: 60px;
 	text-align: center;
 	opacity: 1;
-	/*http: //www.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/; */
 	position: absolute;
 	margin: auto;
 	top: 0;
@@ -365,9 +357,9 @@ body
 	left: 0;
 }
 #portfolio .image_thumb a:hover { text-decoration: none; }
-/* end templatemo portfolio */
+/* end   portfolio */
 
-/* start templatemo contact */
+/* start   contact */
 #contact
 {
 	background: #303030;
@@ -392,7 +384,7 @@ body
 	border-color: transparent;
 	box-shadow: none;
 }
-#contact input[type="submit"]
+#contact input[type="button"]
 {
 	color: #FFF;
 	font-weight: 600;
@@ -401,7 +393,7 @@ body
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 }
-#contact input[type="submit"]:hover
+#contact input[type="button"]:hover
 {
 	background: #ffa400;
 	border-color: transparent;
@@ -426,16 +418,17 @@ a:hover, a:active
 	color: #ffd485;
 	text-decoration: none;
 }
-/* end templatemo contact */
+/* end   contact */
 
-/* start templatemo footer */
+/* start   footer */
 footer
 {
 	border-top: 1px solid #404040;
 	background: #202020;
 	color: #FFF;
-	padding: 80px 0 40px 0;
+	padding: 30px 0 10px 0;
 }
+
 footer .social_icon a
 {
 	border: 1px solid #FFF;
@@ -456,9 +449,9 @@ footer .social_icon a:hover
 	border-color: transparent;
 	background: #ffa400;
 }
-/* end templatemo footer */
+/* end   footer */
 
-/* starttemplatemo  go top */
+/* start   go top */
 .go-top 
 {
 	background-color: #ffa400;
@@ -475,14 +468,14 @@ footer .social_icon a:hover
 	text-align: center;
 }
 .go-top:hover {	color: #F9F9F9; }
-/* end templatemo go top */
+/* end   go top */
 
 @media only screen and (max-width: 1199px) {
 	.flexslider h1 { font-size: 30px; }
 	.flexslider h2 { font-size: 24px; }
 }
 
-/* start templatemo 768 media quires */
+/* start   768 media quires */
 @media only screen and ( max-width: 768px ) {
 	.navbar-default .navbar-brand {	margin-left: 20px; }
 	.navbar-default .navbar-nav	{ margin: 0; }
@@ -493,29 +486,29 @@ footer .social_icon a:hover
 	}
 	.flexslider h1 { font-size: 26px; }
 	.flexslider h2 { font-size: 18px; }
-	.templatemo-slider-btn { 
+	. -slider-btn {
 		margin-top: 10px; 
 		width: 180px;
 		height: 40px;
 		padding-top: 8px;
 	}
 }
-/* end templatemo 768 media quires */
+/* end   768 media quires */
 
-/* start templatemo 680 media quires */
+/* start   680 media quires */
 @media only screen and ( max-width: 680px ) {
 	.navbar-default .navbar-nav li a { border-bottom: 1px solid #f6f6f6; line-height: normal; height: 40px; }
-/* end templatemo 680 media quires */
+/* end   680 media quires */
 
-/* start templatemo 600 media quires */
+/* start   600 media quires */
 @media only screen and ( max-width: 640px ) {	
 	.flexslider h1 { font-size: 20px; }
 	.flexslider h2 { font-size: 14px; }
-	.templatemo-slider-btn {
+	. -slider-btn {
 		width: auto;
 		height: auto;
 		padding: 10px 20px;
 		margin-top: 10px; 
 	}
 }
-/* end templatemo 600 media quires */
+/* end   600 media quires */
