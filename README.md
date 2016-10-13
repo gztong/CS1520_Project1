@@ -1,7 +1,10 @@
 # CS1520_Project1
-Gangzheng Tong
+### Gangzheng Tong
 
-This webpage is used for self promotion and blogging. The front end depends on bootstrap, angularJS. The backend is include NodeJS, PHP. It's not compeleted yet.
+### Demo: http://www.pitt.edu/~gat26/1520
+### Host locally, cd to the root directory, $ http-server .
+
+This website is used for self promotion and blogging. The front end depends on bootstrap, angularJS. The backend is include NodeJS, PHP. It's not compeleted yet.
 
 
 Part1 
