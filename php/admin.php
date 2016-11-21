@@ -166,11 +166,6 @@
 <footer class="text-center" id="foot">
   <div class="container">
     <div class="row">
-      <div class="social_icon">
-        <a href="https://www.facebook.com/gangzheng.tong" target="_blank" class="fa fa-facebook"></a>
-        <a href="https://github.com/gztong" target="_blank" class="fa fa-github"></a>
-        <a href="https://www.linkedin.com/in/gztong" target="_blank" class="fa fa-linkedin"></a>
-      </div>
     </div>
     <p>Built by Gangzheng | 2016 | <a href="../">home</a></p>
   </div>

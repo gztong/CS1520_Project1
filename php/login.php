@@ -8,6 +8,12 @@
   <link rel="shortcut icon" href="../favicon.ico"/>
 </head>
 <body>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container toolbar">
+      <button type="button" class="btn btn-default navbar-btn"><a href="../">Home</a></button>      
+    </div>
+  </nav>  
+
   <div class="info">
     <h1>
       Login to My Admin
@@ -16,13 +22,10 @@
   <div class="content">
     <form action="checklogin.php" method="POST">
       <div class="input-group input-group-lg row">
-        <span class="input-group-addon" id="sizing-addon1">username</span>
-        <input type="text" class="form-control" name="username" required="required" />
+        <input type="text" class="form-control" name="username" required="required" placeholder="Username" />
       </div>
-
       <div class="input-group input-group-lg row">
-        <span class="input-group-addon" id="sizing-addon1">password</span>
-        <input type="password" class="form-control" name="password" required="required" />  
+        <input type="password" class="form-control" name="password" required="required" placeholder="Password" /> 
       </div>
       <div class="row">
         <input class="btn btn-primary btn-lg login-button" type="submit" value="submit">
@@ -30,4 +33,12 @@
     </form>
   </div>
 </body>
+
+<footer class="text-center" id="foot">
+  <div class="container">
+  <div class="row"></div><div class="row"></div>
+    <p>Built by Gangzheng | 2016 | <a href="../">home</a></p>
+  </div>
+</footer>
+
 </html>
