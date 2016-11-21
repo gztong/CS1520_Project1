@@ -9,7 +9,6 @@ var app = angular.module('homepageApp', ['ngRoute']);
         templateUrl : 'homepage.html',
         controller  : 'ContentController'
       })
-
       // route for the about page
       .when('/blog', {
         templateUrl : 'partials/blog.html',
@@ -34,7 +33,19 @@ app.factory('serviceManager',function serviceManager($http, $q) {
         deferred.reject();
       });
       return deferred.promise;
-    }
+    },
+
+    postService: function(str) {
+      var deferred = $q.defer();
+      var scope = this;
+      $http.post(str).
+      success(function(response) {
+        deferred.resolve(response);
+      }).error(function(){
+        deferred.reject();
+      });
+      return deferred.promise;
+    }   
   }
 
   return serviceManager;
@@ -43,24 +54,44 @@ app.factory('serviceManager',function serviceManager($http, $q) {
 // Define the `contentController` controller on the `homepageApp` module
 app.controller('ContentController', function ContentController($scope, $http, serviceManager) {
   $scope.sendMessage = function() {
-         // TODO
+      // check valid
+      var valid = validateInput($scope.msg.name, $scope.msg.mail, $scope.msg.text);
+      if(valid){
         $http({
             method : 'POST',
-            url : '/message',
+            url : './ajax/sendMessage.php',
             data : $scope.msg
+        }).success(function(response){
+            alert("Successfully sent!");
         });
         // clean
-        $scope.msg.email = "";
-        $scope.msg = {};
+        $scope.msg = {};        
+      }
   };
 
-  serviceManager.getService('./data/project.json').then(function (data) {
+function validateInput(name, email, msg) {
+     if (name==null || name=="",email==null || email=="",msg==null || msg=="")
+      {
+      alert("Please Fill All Required Field");
+      return false;
+      }
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    
+    if(re.test(email)){
+      return true;
+    }else{
+      alert("Please Input Valid Email.");
+      return false;
+    }
+};
+
+  serviceManager.postService('./ajax/getData.php?table='+'projects').then(function (data) {
     $scope.projects = data;
   });
-
-  serviceManager.getService('./data/experience.json').then(function (data) {
+  serviceManager.postService('./ajax/getData.php?table='+'experiences').then(function (data) {
     $scope.experiences = data;
   });
+
 });
 
 app.controller('headerCtrl', ['$anchorScroll', '$location', '$scope',

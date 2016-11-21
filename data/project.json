@@ -2,7 +2,7 @@
     {
       "name": "CourseMirror",
       "subtitle": "an iOS app for learning rereash",
-      "desc": "<p>CourseMirror is a learning research project developed by <a href=\"http://mips.lrdc.pitt.edu/\">MIPS lab</a> at our Computer Science Department. I joined the team at 2015 and focused on developing CourseMirror in iOS platform. It's used to collect the feedback from students after each lecture and provide the instructors with a summrized feedback to help them improve the class quality. The project is wriiten in Objective-C and the database is on <a href=\"https://parse.com/\">Parse</a>. This is my first iOS app and it's available to download on the App store now, thanks to the help from Prof. Jingtao Wang and Xiangmin Fan.</p>",
+      "description": "<p>CourseMirror is a learning research project developed by <a href=\"http://mips.lrdc.pitt.edu/\">MIPS lab</a> at our Computer Science Department. I joined the team at 2015 and focused on developing CourseMirror in iOS platform. It's used to collect the feedback from students after each lecture and provide the instructors with a summrized feedback to help them improve the class quality. The project is wriiten in Objective-C and the database is on <a href=\"https://parse.com/\">Parse</a>. This is my first iOS app and it's available to download on the App store now, thanks to the help from Prof. Jingtao Wang and Xiangmin Fan.</p>",
       "image": "images/coursemirror.jpg",
       "url": "http://www.coursemirror.com",
       "github": "https://github.com/gztong/CourseMirror_iOS",
@@ -13,7 +13,7 @@
     {
       "name": "Rally Dashboard",
       "subtitle": "a Web app for managing defects and user stories",
-      "desc": "<p> This single page application uses  <a href=\"https://help.rallydev.com/access-web-services-api-wsapi\">Rally (now CA Agile) </a> Web Service API to retrive the defect and user stories data and displays them in a friendly way. It will track the most recently modified defects each day so as to bring the developers' attention. It also groups the defects by different criterions, such as owner, priority etc.At first, this dashboard is developed at ANSYS for internal usage. With the powerful binding provided by <a href=\"https://angularjs.org/\">angularJS</a>, the filter and group functions are instant, and the data are up-to-date with the rally server.</p>",
+      "description": "<p> This single page application uses  <a href=\"https://help.rallydev.com/access-web-services-api-wsapi\">Rally (now CA Agile) </a> Web Service API to retrive the defect and user stories data and displays them in a friendly way. It will track the most recently modified defects each day so as to bring the developers' attention. It also groups the defects by different criterions, such as owner, priority etc.At first, this dashboard is developed at ANSYS for internal usage. With the powerful binding provided by <a href=\"https://angularjs.org/\">angularJS</a>, the filter and group functions are instant, and the data are up-to-date with the rally server.</p>",
       "image": "images/defectDashboard.png",
       "url": "http://www.coursemirror.com",
       "github": "https://github.com/gztong/Defect_Dashboard",

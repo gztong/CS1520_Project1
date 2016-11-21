@@ -13,7 +13,7 @@
       <div class="col-sm-8 col-md-8">
         <h3><a href={{proj.url}} target="_blank">{{proj.name}}</a></h3>
         <h4>{{proj.subtitle}}</h4>
-        <div ng-bind-html="proj.desc | trust"></div>
+        <div ng-bind-html="proj.description | trust"></div>
       </div>
       <div class="col-sm-4 col-md-4">
         <div class="project-image-container">
@@ -52,7 +52,7 @@
         <h5>{{exp.time}}</h5>
         <h5><a href={{exp.url}}>{{exp.team}}</a>, {{exp.location}}</h5>
         <div class="col-md-10">
-          <div ng-bind-html="exp.desc | trust"></div>
+          <div ng-bind-html="exp.description | trust"></div>
         </div>
       </div>
     </div>
@@ -77,12 +77,12 @@
       </div>
 
       <div class="col-sm-6 col-md-8">
-        <form action="#" method="post" role="form">
+        <form action="#" method="POST" role="form">
           <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Name" ng-model="msg.name">
           </div>
           <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Email" ng-model="msg.email">
+            <input type="text" class="form-control" placeholder="Email" ng-model="msg.mail">
           </div>
           <div class="col-md-12">
             <textarea class="form-control" rows="6" placeholder="Message" ng-model="msg.text"></textarea>
